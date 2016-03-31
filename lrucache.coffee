@@ -60,11 +60,11 @@ class LRUCache
     if !@tail
       @tail = node
 
-
-module.exports = {
-  create:(options)->
-    new LRUCache(options)
-}
+if typeof module != 'undefined' and 'exports' in module
+  module.exports = {
+    create:(options)->
+      new LRUCache(options)
+  }
 
 
 

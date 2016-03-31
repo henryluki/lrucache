@@ -4,7 +4,14 @@ LRUCache for javascript
 
 ##Init##
 ```Javascript
+  CommonJS:
+
   var cache = require('./lrucache').create({capacity: 10}) # create({capacity: X})
+
+  Script:
+
+  <script type="text/javascript" src="lrucache.js"></script>
+  var lrucache = LRUCache({capacity: 10});
 
 ```
 
